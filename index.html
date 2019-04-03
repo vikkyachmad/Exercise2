@@ -1,0 +1,51 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+</head>
+<body>
+        <form id="formSaya">
+        <div id="calculator">
+                <h1>Calculator</h1>
+                
+                <div class="top">
+                    <input type="button" name="buttonHapus" value="C" onclick="hapus()" />
+                    <input type="text" name="layar" id="layar" />
+                </div>
+               
+                <div class="bagAtas">
+                    <input type="button" name="7" value="7" onclick="InputData(7)" />
+                    <input type="button" name="8" value="8" onclick="InputData(8)" />
+                    <input type="button" name="9" value="9" onclick="InputData(9)" />
+                    <input type="button" name="+" value="+" onclick="pilTambah()" />
+                    <input type="button" name="x" value="x" onclick="pilKali()" /></div>
+                <div class="bagTengah">
+                    <input type="button" name="4" value="4" onclick="InputData(4)" />
+                    <input type="button" name="5" value="5" onclick="InputData(5)" />
+                    <input type="button" name="6" value="6" onclick="InputData(6)" />
+                    <input type="button" name="-" value="-" onclick="pilKurang()" />
+                    <input type="button" name="/" value="/" onclick="pilBagi()" /></div>
+                <div class="bagTengah2">
+                    <input type="button" name="1" value="1" onclick="InputData(1)" />
+                    <input type="button" name="2" value="2" onclick="InputData(2)" />
+                    <input type="button" name="3" value="3" onclick="InputData(3)" />
+                    <input type="button" name="." value="." onclick="InputData('.')" />
+                    <input type="button" name="^" value="^" onclick="pilPangkat()" /></div>
+                    
+                <div class="bagBawah">
+                    <input type="button" name="0" value="0" onclick="InputData(0)" />
+                    <input type="button" name="00" value="00" onclick="angkaNol2()" />
+                    <input type="button" name="000" value="000" onclick="angkaNol3()" />
+                    <input type="button" name="±" value="±" onclick="plusMinus()" />  
+                    <input type="button" name="=" value="=" onclick="Hasil()" />
+                                                        
+                </div>
+            </form>
+            
+</body>
+<script src="main.js"></script>
+</html>
